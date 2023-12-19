@@ -1,0 +1,92 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0px 10% 0px 10%;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete_button {
+  display: none;
+  width: 25%;
+  border-width: 0px;
+  border-left-width: 1px;
+  border-radius: 2px;
+}
+
+.todos {
+  margin: 12px 20px 0px 20px;
+}
+
+#sorts,
+#filter {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#sorts {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin-right: 10px;
+}
+
+#filter-box {
+  margin-left: 1px;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  border-radius: 2px;
+  margin: 5px 1px 5px 1px;
+}
+
+.todo:hover .delete_button {
+  display: inline;
+}
+.todo:hover .todoDate {
+  display: none;
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.inputName {
+  width: 72%;
+  height: 30px;
+  margin: 0px 0px 0px 1px;
+}
+
+.add_button {
+  width: 25%;
+  margin: 0px 1px 0px 0px;
+}
+
+.todoCheckbox,
+.todoDate {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.todoDate {
+  margin-right: 5px;
+  align-self: flex-end;
+}
+
+.todoCheckbox {
+  max-width: 72%;
+}
